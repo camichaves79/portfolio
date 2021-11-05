@@ -8,8 +8,8 @@ body {
 }
 
 .square {
-    width: 100px;
-    height:100px;
+    width: 98px;
+    height:98px;
     border-style: solid;
     border-color: black;
     background-color: chocolate;
