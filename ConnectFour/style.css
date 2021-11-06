@@ -18,6 +18,8 @@ body {
     border-color: #003313;
     display: flex;
     flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
     height: 84vmin;
     width: 96vmin;
     min-width: 182px;
