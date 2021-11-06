@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const result = document.querySelector('#result')
     const displayCurrentPlayer = document.querySelector('#current-player')
     let currentPlayer = 1
+    var p1 = document.getElementById("myAudio1")
+    var p2 = document.getElementById("myAudio2")
 
     for (var i = 0, len = squares.length; i < len; i++)
 
@@ -17,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         squares[index].classList.remove('slot')
                         squares[index].classList.add('player-one')
                         squares[index].classList.add('unclickable')
+                        p1.play()
                         // change the player
                         currentPlayer = 2
                         displayCurrentPlayer.innerHTML = currentPlayer
@@ -25,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         squares[index].classList.remove('slot')
                         squares[index].classList.add('player-two')
                         squares[index].classList.add('unclickable')
+                        p2.play()
                         // change the player
                         currentPlayer = 1
                         displayCurrentPlayer.innerHTML = currentPlayer
