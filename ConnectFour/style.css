@@ -24,6 +24,8 @@ body {
     width: 96vmin;
     min-width: 182px;
     min-height: 182px;
+    max-width: 740px;
+    max-height: 740px;
     background-color: #EBCD47;
     margin-left: auto;
     margin-right: auto;
