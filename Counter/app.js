@@ -12,6 +12,13 @@ btns.forEach(function (btn) {
             counter--;
         }else if (styles.contains('increase')){
             counter++;
+        }else if(styles.contains('share')){
+            try {
+                await navigator.share(shareData)
+                resultPara.textContent = 'MDN shared successfully'
+              } catch(err) {
+                resultPara.textContent = 'Error: ' + err
+              }
         }else{
             counter = 0;
         }
