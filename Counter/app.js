@@ -6,7 +6,7 @@ const value = document.querySelector('.value')
 const btns = document.querySelectorAll('.btn')
 const share =  function(shareData){
     try {
-        navigator.share(shareData)
+        navigator.share("iCounted " + shareData)
         console.log('MDN shared successfully'); 
       } catch(err) {
         console.log('Error: ' + err);
