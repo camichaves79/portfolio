@@ -4,6 +4,14 @@ let counter = 0;
 // select value and buttons
 const value = document.querySelector('.value')
 const btns = document.querySelectorAll('.btn')
+const share =  function(shareData){
+    try {
+        navigator.share(shareData)
+        console.log('MDN shared successfully'); 
+      } catch(err) {
+        console.log('Error: ' + err);
+      }
+}           
 
 btns.forEach(function (btn) {
     btn.addEventListener('click', function(e){
@@ -13,12 +21,12 @@ btns.forEach(function (btn) {
         }else if (styles.contains('increase')){
             counter++;
         }else if(styles.contains('share')){
-            try {
-                await navigator.share(shareData)
-                resultPara.textContent = 'MDN shared successfully'
-              } catch(err) {
-                resultPara.textContent = 'Error: ' + err
-              }
+            var shareData = {
+                text: String(counter)
+            }
+
+            share(shareData)
+
         }else{
             counter = 0;
         }
