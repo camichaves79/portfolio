@@ -6,7 +6,7 @@ const value = document.querySelector('.value')
 const btns = document.querySelectorAll('.btn')
 const share =  function(shareData){
     try {
-        navigator.share("iCounted " + shareData)
+        navigator.share(shareData)
         console.log('MDN shared successfully'); 
       } catch(err) {
         console.log('Error: ' + err);
@@ -22,7 +22,7 @@ btns.forEach(function (btn) {
             counter++;
         }else if(styles.contains('share')){
             var shareData = {
-                text: String(counter)
+                text: "iCounted "+String(counter)
             }
 
             share(shareData)
