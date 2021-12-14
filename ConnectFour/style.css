@@ -13,7 +13,7 @@ body {
 }
 .grid {
     border: 3px solid;
-    border-color: #6AD6F7;
+    border-color: #ACECFF;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
@@ -42,7 +42,7 @@ body {
 .slot {
     border: 1px solid;
     border-radius: 50%;
-    background-color: #6AD6F7;
+    background-color: #ACECFF;
     /* background-color:#7c7c83 ; */
     /* background-image: linear-gradient(45deg,#7c7c83 50%, #f2f2f3 100%); */
 }
