@@ -1,0 +1,64 @@
+body{
+    box-sizing: border-box;
+}
+.uno{
+    background-image: url(./images/Alea_1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.dos{
+    background-image: url(./images/Alea_2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.tres{
+    background-image: url(./images/Alea_3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cuatro{
+    background-image: url(./images/Alea_4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cinco{
+    background-image: url(./images/Alea_5.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.seis{
+    background-image: url(./images/Alea_6.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#fondo{
+    height: 100vh;
+    width: 100vw;
+    background-color: green;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.box{
+    background-color: green;
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    border-radius: 20px;
+    width: 114px;
+    height: 114px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+
+}
+
+.boxA{
+    background-color: green;
+    width: 52px;
+    height: 52px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+}
